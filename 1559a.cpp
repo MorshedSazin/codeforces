@@ -19,19 +19,14 @@ typedef unsigned long long int ull;
 // partition(arr.begin(), arr.end(), [](int x) { return x % 2 == 0; });
  
 void solution() {
-    ll n; cin >> n;
-    vector<ll> arr(n);
-    for(int i = 0; i < n; ++i) s2(arr[i]);
-    int ans = accumulate(arr.begin(),arr.end(),arr[0],std::bit_and<int>());
-    cout<<ans<<endl;
  
 }
 /*In each operation, she can select an arbitrary interval [l,r] and for all values 
 i(0≤i≤r−l), replace al+i with al+i&ar−i at the same time*/
  
 int main() {
-    int t;sf(t);
-    while(t--) solution();
+   
+    solution();
     // for(int i = 0; i<100; i++) cout <<536870911<<" ";
     return 0;
 }

@@ -3,6 +3,7 @@
     IUBAT - International University of Business Agriculture and Technology
             Department of Computer Science and Engineering
 */
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long int ll;
@@ -17,28 +18,17 @@ typedef unsigned long long int ull;
 //__gcd(arr[i], arr[j])
 // partition(arr.begin(), arr.end(), [](int x) { return x % 2 == 0; });
 
-#include <bits/stdc++.h>
-using namespace std;
-
-/*
- *            (\_/)
- *           ( •_•)
- *          / >**>
- */
-
 void solution() {
-    int a,b;
-    cin>>a>>b; 
+    ll n; cin >> n;
+    int a21 = n % 2020;
+    int a20 = (n-a21)/2020-a21;
+    cout<<(a20 >= 0 && 2020*a20 + 2021*a21==n ? "YES":"NO")<<endl;
 
-    if(a==b && a&&b != 1) cout<<0<<endl; 
-    else if(a ==1 && b==1 ) cout<<1<<endl;
-    else if(a>=1&&b>a){
-        cout << b-a <<endl;
-    }
 }
+    
 
 int main() {
-    int t; cin >> t;
-    while (t--) solution();
+    int t;sf(t);
+    while(t--) solution();
     return 0;
 }

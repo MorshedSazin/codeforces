@@ -17,28 +17,23 @@ typedef unsigned long long int ull;
 //__gcd(arr[i], arr[j])
 // partition(arr.begin(), arr.end(), [](int x) { return x % 2 == 0; });
 
-#include <bits/stdc++.h>
-using namespace std;
+void solution(){
+    int n,m;
+    sf(n);
+    sf(m);
 
-/*
- *            (\_/)
- *           ( •_•)
- *          / >**>
- */
-
-void solution() {
-    int a,b;
-    cin>>a>>b; 
-
-    if(a==b && a&&b != 1) cout<<0<<endl; 
-    else if(a ==1 && b==1 ) cout<<1<<endl;
-    else if(a>=1&&b>a){
-        cout << b-a <<endl;
+    int count=0;
+    while(n--){
+        string a;
+        cin >> a;
+        m -= a.size();
+        if(m >= 0) count++;
     }
+    cout << count << endl;
 }
 
-int main() {
-    int t; cin >> t;
-    while (t--) solution();
+int main(){
+    int t; sf(t);
+    while(t--)solution();
     return 0;
 }

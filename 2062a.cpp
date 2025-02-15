@@ -27,14 +27,12 @@ using namespace std;
  */
 
 void solution() {
-    int a,b;
-    cin>>a>>b; 
-
-    if(a==b && a&&b != 1) cout<<0<<endl; 
-    else if(a ==1 && b==1 ) cout<<1<<endl;
-    else if(a>=1&&b>a){
-        cout << b-a <<endl;
-    }
+	int count = 0;
+	string a;cin>>a;
+	for(int i=0;i<a.length();i++){
+		if(a[i]=='1')count++;
+	}
+	cout<<count<<endl;
 }
 
 int main() {
