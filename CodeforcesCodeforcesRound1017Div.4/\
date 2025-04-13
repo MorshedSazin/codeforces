@@ -1,0 +1,26 @@
+// time-limit: 1000
+// problem-url: https://codeforces.com/contest/2094/problem/B
+#include <bits/stdc++.h>
+using namespace std;
+/*
+ *            (\_/)
+ *           ( •_•)
+ *          / >**>
+ */
+void solution() {
+  int n, m, l, r;
+  cin >> n >> m >> l >> r;
+  for (n; m <= n; -m) {
+    l++;
+    r--;
+  }
+  cout << t << " " << r << endl;
+}
+
+int main() {
+  int t;
+  cin >> t;
+  while (t--)
+    solution();
+  return 0;
+}
